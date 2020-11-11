@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Datos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <header>
+            <h1> Datos </h1>
+        </header>
+        <form id="forma" action="javascript:procesa()">      
+            <p>
+                <label accesskey="N">
+                    Nombre: <br/>
+                    <input type="text" id="nombre" required placeholder="1 a 50 caracteres">
+                </label>
+                <br><output id="salidaNombre"></output>
+            </p>
+            <p>
+                <label accesskey="T">
+                    Telefono: <br/>
+                    <input type="tel" id="telefono" required placeholder="10 a 14 digitos">
+                </label>
+                <br><output id="salidaTelefono"></output>
+            </p>
+            <p>
+                <label accesskey="F">
+                    Fecha: <br/>
+                    <input name="fecha" type="date" required >
+                </label>
+                <br><output id="salidaFecha"></output>
+            </p>
+            <p>
+                <input type="submit" value="Procesar" accesskey="P">
+                <input type="submit" value="Limpiar" accesskey="L">
+            </p>
+
+        </form>
+        <footer>
+            Copyright 2020 Andres Zamitiz
+        </footer>
+        <script src="js/CtrlEvaluacion.js"></script>
+    </body>
+</html>
